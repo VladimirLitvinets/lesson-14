@@ -1,0 +1,358 @@
+p {
+	font-size: 18px;
+	color: #9795b5;
+}
+.body {
+	background-color: #fff;
+}
+.header {
+	background-color: #f9f9ff;
+}
+.main {
+}
+.footer {
+}
+
+.title-h1 {
+	color: #5d5a88;
+}
+.title-h2 {
+	color: #5d5a88;
+}
+.title-h3 {
+	color: #5d5a88;
+}
+
+.button {
+}
+.button_primary {
+	background-color: #5d5a88;
+	color: #fff;
+}
+.button_primary:hover {
+	background-color: #5f5c7f;
+}
+.button_primary:active {
+	background-color: #a4a2c4;
+}
+.button_secondary {
+	background-color: #fff;
+	color: #5d5a88;
+}
+.button_secondary:hover {
+	background-color: #f6f5ff;
+}
+.button_secondary:active {
+	background-color: #efeefb;
+}
+
+/*-------------------------HEADER-------------------------- */
+
+.header__container {
+}
+.header__list {
+}
+.header__item {
+}
+.header__item_logo {
+}
+.header__link {
+	color: #5d5a88;
+}
+.header__link:hover {
+	color: #1500ff;
+}
+.header__link:active {
+	color: #000;
+}
+.header__logo {
+}
+
+/* -------------------------TEAM-------------------------- */
+
+.team {
+}
+.team__container {
+}
+.team__image {
+}
+.team__img {
+}
+.team__content {
+}
+.team__title {
+}
+.arrow-btn {
+}
+/* ------------------------TRUSTED------------------------ */
+
+.trusted {
+	background-color: #f9f9ff;
+}
+.trusted__container {
+}
+.trusted__title {
+	color: #1e285f;
+}
+.trusted__text {
+}
+.trusted__list {
+}
+.trusted__item {
+}
+.trusted__logo {
+}
+
+/* -----------------------RESULTS------------------------- */
+
+.results {
+}
+.results__container {
+}
+.results__main-title {
+}
+.results__title {
+}
+.results__content {
+}
+.results__list {
+}
+.results__item {
+}
+.results__title-h3 {
+}
+.results__title-h3_grey {
+	color: #bcbacd;
+}
+.results__text {
+	color: #5d5a88;
+}
+
+/* --------------------------ACCOUNT---------------------------- */
+
+.account {
+	background-color: #f2f1fa;
+}
+.account__container {
+}
+.account__content {
+}
+.account__title {
+}
+.account__text {
+}
+.account__link {
+	color: #5d5a88;
+}
+.button_primary {
+}
+.button_secondary {
+}
+.account__image {
+}
+.account__img {
+}
+
+/* -------------------------PAYMENTS-------------------------- */
+
+.payments {
+}
+.payments__container {
+}
+.payments__title {
+	color: #5d5a88;
+}
+.payments__table {
+}
+.table {
+}
+.table__head {
+}
+.table__row-head {
+	color: #464a53;
+}
+.table__cell-head-1 {
+}
+.table__cell-head-2 {
+}
+.table__cell-head-3 {
+}
+.table__cell-head-4 {
+}
+.table__cell-head-5 {
+}
+.table__cell-head-6 {
+}
+.table__cell-head-7 {
+}
+.table__cell-1 {
+	color: #6a707e;
+}
+.table__cell-2 {
+	color: #abafb3;
+}
+.table__cell-3 {
+	color: #6a707e;
+}
+.table__cell-4 {
+	color: #6a707e;
+}
+.table__cell-5 {
+	color: #abafb3;
+}
+.table__cell-6 {
+	color: #6a707e;
+}
+.table__cell-7 {
+	color: #6a707e;
+}
+.table__body {
+}
+.table__row-1 {
+	background-color: #fafafa;
+}
+.table__row-2 {
+}
+.table__row-3 {
+	background-color: #fafafa;
+}
+.table__row-4 {
+}
+.table__foot {
+}
+.table__row-foot {
+	background-color: #fafafa;
+}
+.table__foot .table__cell-1 {
+	color: #464a53;
+}
+.table__foot .table__cell-2 {
+	color: #464a53;
+}
+
+/* ------------------------VIDEO---------------------------- */
+
+.video {
+}
+.video__container {
+}
+.video__player-container {
+}
+.video__player {
+}
+.video__content {
+}
+.video__title {
+}
+.video__text {
+}
+
+/* -------------------------FEATURES------------------------------ */
+
+.features {
+}
+.features__container {
+}
+.features__main-title {
+}
+.features__text {
+}
+.features__item {
+	background-color: #f2f1fa;
+}
+.features__item_xl {
+}
+.features__img {
+}
+.features__title-h3 {
+}
+.features__link {
+	color: #8d8ba7;
+}
+.icon {
+}
+.features__item-container {
+}
+
+/* ---------------------------FOOTER----------------------------- */
+
+.footer__container {
+}
+.footer__text {
+}
+.footer__link {
+	color: #adabc3;
+}
+
+/* --------------------------BACKGROUND--------------------------- */
+.background {
+	height: 570px;
+	background-repeat: no-repeat;
+	background-position: left;
+	margin-bottom: 50px;
+	background-color: #f2f1fa;
+	background-image: url(../images/background/css.png);
+}
+.background_center {
+	background-position: center;
+}
+.background_right {
+	background-position: right;
+}
+.background_left {
+	background-position: left top;
+}
+.background_repeat {
+	background-repeat: repeat;
+	background-position: top;
+}
+.background_small-left {
+	background-size: auto 50%;
+	background-position: left top;
+}
+.background_small-repeat-x {
+	background-size: auto 50%;
+	background-position: left top;
+	background-repeat: repeat-x;
+}
+.background_small-repeat-left-top {
+	background-size: auto 50%;
+	background-position: left top;
+	background-repeat: repeat;
+}
+.background_small-repeat-top {
+	background-size: auto 50%;
+	background-position: top;
+	background-repeat: repeat;
+}
+.background_small-repeat-size-top {
+	background-position: top;
+	background-size: 20% auto;
+	background-repeat: repeat;
+}
+.background_small-repeat {
+	background-size: 20% auto;
+	background-repeat: repeat;
+}
+.background_small-center {
+	background-size: auto 50%;
+	background-position: center;
+}
+.background_small-repeat-Y-R-bottom {
+	background-size: auto 50%;
+	background-repeat: repeat-y;
+	background-position: right bottom;
+}
+.background_small-repeat-Y-center-top {
+	background-size: auto 50%;
+	background-repeat: repeat-y;
+	background-position: center top;
+}
+.background_double {
+	background-image: url(../images/background/css3-02-svgrepo-com\ 5.png),
+		url(../images/background/mantis-8194123_1920\ 1.jpg);
+	background-position: center, center;
+	background-size:
+		auto 50%,
+		100% auto;
+}
