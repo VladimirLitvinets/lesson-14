@@ -5,7 +5,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./css/styles.css">
-	<title>Home_work_6</title>
+	<title>Home-work-7</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap"
+		rel="stylesheet">
 </head>
 
 <body class="body">
@@ -44,20 +48,22 @@
 	<main class="main">
 		<section class="team">
 			<div class="team__container">
-				<div class="team__image">
-					<img src="./images/team/team.svg" height="557" width="565" alt="Some image" class="team__img">
+				<div class="team__image-container">
+					<img src="./images/team/team.svg" height="557" width="565" alt="Some image" class="team__image">
 				</div>
 				<div class="team__content">
 					<h1 class="title-h1 team__title">A dedicated team to grow your company</h1>
-					<button class="button button_primary">Get started <svg class="icon" width="16" height="15"
-							viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<p class="team__text">Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis
+						sit aliquam sit nullam neque ultrices.</p>
+					<button class="button team__button-primary button_primary">Get started <svg class="icon" width="16"
+							height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M8.28862 1.15436L14.6343 7.50001L8.28862 13.8457" stroke="white" stroke-width="1.5"
 								stroke-linecap="round" stroke-linejoin="round" />
 							<path d="M14.6342 7.5L1.13428 7.5" stroke="white" stroke-width="1.5" stroke-linecap="round"
 								stroke-linejoin="round" />
 						</svg>
 					</button>
-					<button class="button button_secondary">Talk to sales</button>
+					<button class="button team__button-secondary button_secondary">Talk to sales</button>
 				</div>
 			</div>
 		</section>
@@ -135,8 +141,8 @@
 						adipiscing elit dolor semper at ac tempus
 						enim laoreet massa non.
 					</p>
-					<button class="button button_primary">Get started</button>
-					<button class="button button_secondary">Talk to sales</button>
+					<button class="button account__button-primary button_primary">Get started</button>
+					<button class="button account__button-secondary button_secondary">Talk to sales</button>
 				</div>
 				<div class="account__image">
 					<img src="./images/account/account.svg" height="608" width="706" alt="Some image" class="account__img">
@@ -213,10 +219,11 @@
 				</div>
 				<div class="video__content">
 					<h2 class="title-h2 video__title">Our video</h2>
-					<p class="video__text">By creating a visual guide along the way, the designer or developer can get
-						input from the other
-						people
-						involved in the website such as the customer.</p>
+					<p class="video__text video__text_font-size">By creating a visual guide <span
+							class="video__text_through">along</span> the way, the <span
+							class="video__text_italic">designer</span> or developer can get
+						input from the other people <span class="video__text_italic-font-weight">involved</span> in the
+						website <span class="video__text_font-weight">such</span> as the customer.</p>
 					<h2 class="title-h2 video__title">Feature one</h2>
 					<p class="video__text">By creating a visual guide along the way, the designer or developer can get
 						input from the other
@@ -230,16 +237,18 @@
 		<section class="features">
 			<div class="features__container">
 				<h2 class="title-h2 features__main-title">Browse our set of features</h2>
-				<p class="features__text">Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar elementum
+				<p class="features__text features__text_center">Lorem ipsum dolor sit amet consectetur adipiscing elit
+					semper dalar elementum
 					tempus hac tellus libero
 					accumsan. </p>
 				<div class="features__item features__item_xl">
 					<img src="./images/features/features.svg" alt="Some image" class="features__img">
-					<h3 class="title-h3 features__title-h3">Mobile app</h3>
-					<p class="features__text">Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalaracc lacus
+					<h3 class="title-h3 features__title-h3 features__title_center">Mobile app</h3>
+					<p class="features__text features__text_center">Lorem ipsum dolor sit amet consecte tur adipiscing elit
+						semper dalaracc lacus
 						vel facilisis.</p>
-					<a href="" class="features__link">Learn more <svg class="icon" width="21" height="21" viewBox="0 0 21 21"
-							fill="none" xmlns="http://www.w3.org/2000/svg">
+					<a href="" class="features__link features__link_center">Learn more <svg class="icon" width="21"
+							height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M11.3316 3.41943L18.3823 10.4702L11.3316 17.5209" stroke="#8D8BA7" stroke-width="1.4"
 								stroke-linecap="round" stroke-linejoin="round" />
 							<path d="M18.3822 10.4702L3.38232 10.4702" stroke="#8D8BA7" stroke-width="1.4"
@@ -249,7 +258,8 @@
 				<div class="features__item-container">
 					<div class="features__item">
 						<h3 class="title-h3 features__title-h3">Desktop app</h3>
-						<p class="features__text">Lorem ipsum dolor sit amet consecte tur adipiscing elit semper.</p>
+						<p class="features__text features__text_font-size">Lorem ipsum dolor sit amet consecte tur adipiscing
+							elit semper.</p>
 						<a href="" class="features__link">Learn more <svg class="icon" width="21" height="21"
 								viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M11.3316 3.41943L18.3823 10.4702L11.3316 17.5209" stroke="#8D8BA7" stroke-width="1.4"
@@ -261,7 +271,8 @@
 					</div>
 					<div class="features__item">
 						<h3 class="title-h3 features__title-h3">Multiple users</h3>
-						<p class="features__text">Lorem ipsum dolor sit amet consecte tur adipiscing elit semper.</p>
+						<p class="features__text features__text_font-size">Lorem ipsum dolor sit amet consecte tur adipiscing
+							elit semper.</p>
 						<a href="" class="features__link">Learn more <svg class="icon" width="21" height="21"
 								viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M11.3316 3.41943L18.3823 10.4702L11.3316 17.5209" stroke="#8D8BA7" stroke-width="1.4"
