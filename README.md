@@ -1,2 +1,2 @@
-# lesson-7
-github pages - https://vladimirlitvinets.github.io/lesson-7/
+# lesson-8
+github pages - https://vladimirlitvinets.github.io/lesson-8/
