@@ -3,10 +3,33 @@
 	--secondary-color: #9795b5;
 }
 
-p {
+* {
+	box-sizing: border-box;
+}
+
+ul {
+	margin: 0;
+}
+
+body {
+	margin: 0;
 	font-size: 18px;
+}
+
+[class*="__container"] {
+	width: 1220px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 15px;
+}
+
+p {
 	font-weight: 400;
 	color: var(--secondary-color);
+}
+
+.link__icon {
+	margin-left: 3px;
 }
 
 .body {
@@ -16,12 +39,6 @@ p {
 
 .header {
 	background-color: #f9f9ff;
-}
-
-.main {
-}
-
-.footer {
 }
 
 .title-h1 {
@@ -41,15 +58,36 @@ p {
 }
 
 .button {
+	display: inline-block;
 	text-align: center;
+	font-size: 18px;
+	padding: 20px 35px;
+	border-radius: 40px;
 	line-height: 1;
 	font-family: "DM Sans", Arial;
+	text-decoration: none;
+}
+
+.button_xs {
+	padding: 25px 55px;
+}
+
+.button__icon {
+	margin-left: 8px;
 }
 
 .button_primary {
+	margin-right: 24px;
+	border: none;
 	font-weight: 700;
 	background-color: var(--primary-color);
 	color: #fff;
+}
+
+.button_secondary {
+	font-weight: 400;
+	background-color: #fff;
+	color: var(--primary-color);
 }
 
 .button_primary:hover {
@@ -60,12 +98,6 @@ p {
 	background-color: #a4a2c4;
 }
 
-.button_secondary {
-	font-weight: 400;
-	background-color: #fff;
-	color: var(--primary-color);
-}
-
 .button_secondary:hover {
 	background-color: #f6f5ff;
 }
@@ -74,7 +106,15 @@ p {
 	background-color: #efeefb;
 }
 
+.icon {
+	vertical-align: middle;
+}
+
 /*-------------------------HEADER-------------------------- */
+
+.header {
+	padding: 40px 0;
+}
 
 .header__list {
 	list-style: none;
@@ -99,6 +139,9 @@ p {
 
 /* -------------------------TEAM-------------------------- */
 
+.team {
+	padding: 120px 0;
+}
 .team__title {
 	font-size: 56px;
 	font-weight: 700;
@@ -109,20 +152,14 @@ p {
 	color: #8d8ba7;
 }
 
-.team__button-primary {
-	border-radius: 40px;
-	font-size: 18px;
-}
-
 .team__button-secondary {
 	border: 1px solid #5d5a88;
-	border-radius: 36.55px;
-	font-size: 18px;
 }
 
 /* ------------------------TRUSTED------------------------ */
 
 .trusted {
+	padding: 100px 0 155px;
 	background-color: #f9f9ff;
 }
 
@@ -139,6 +176,10 @@ p {
 }
 
 /* -----------------------RESULTS------------------------- */
+
+.results {
+	padding: 177px 0;
+}
 
 .results__list {
 	list-style: none;
@@ -189,21 +230,25 @@ p {
 }
 
 .account__button-primary {
-	border-radius: 47.273px;
 	font-size: 20px;
 }
 
 .account__button-secondary {
 	border: 1.5px solid #5d5a88;
-	border-radius: 44.905px;
 	background-color: transparent;
 	font-size: 20px;
 }
 
 /* -------------------------PAYMENTS-------------------------- */
 
+.payments {
+	padding: 40px 0 135px;
+}
+
 .table {
+	width: 100%;
 	border: 1px solid #dddfe1;
+	font-size: 13px;
 }
 
 .table__row-head {
@@ -260,6 +305,10 @@ p {
 
 /* ------------------------VIDEO---------------------------- */
 
+.video {
+	padding: 100px 0;
+}
+
 .video__text_font-size {
 	font-size: 22px;
 }
@@ -283,6 +332,13 @@ p {
 
 /* -------------------------FEATURES------------------------------ */
 
+.features {
+	padding: 150px 0;
+}
+
+.features__item_xl {
+	text-align: center;
+}
 .features__main-title {
 	text-align: center;
 }
@@ -327,16 +383,11 @@ p {
 	color: #1500ff;
 }
 
-.features__link_center {
-	display: block;
-	text-align: center;
-}
-
-.icon {
-	vertical-align: middle;
-}
-
 /* ---------------------------FOOTER----------------------------- */
+
+.footer {
+	padding: 70px 0;
+}
 
 .footer__link {
 	color: #adabc3;
