@@ -15,6 +15,10 @@ body {
 	padding: 0px;
 }
 
+img {
+	max-width: 100%;
+}
+
 p {
 	font-weight: 400;
 	color: var(--secondary-color);
@@ -103,14 +107,11 @@ p {
 
 .header__list {
 	display: flex;
+	gap: 30px;
 	justify-content: space-between;
 	align-items: center;
 	padding-left: 0;
 	list-style: none;
-}
-
-.header__item:not(:last-child) {
-	margin-right: 30px;
 }
 
 .header__item_logo {
@@ -202,7 +203,8 @@ p {
 .trusted__list {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 95px;
+	gap: 90px;
+	justify-content: space-between;
 	padding-left: 0;
 	list-style: none;
 }
@@ -231,10 +233,15 @@ p {
 }
 
 .results__item {
-	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 270px;
 	width: 50%;
-	padding: 90px 50px;
+	padding: 80px 50px;
 	border: 1px solid #d4d2e3;
+	text-align: center;
 }
 
 .results__item_top-left {
@@ -281,7 +288,7 @@ p {
 
 .account__container {
 	display: flex;
-	gap: 40px;
+	gap: 100px;
 }
 
 .account__content {
@@ -289,6 +296,7 @@ p {
 	flex-wrap: wrap;
 	flex-direction: column;
 	justify-content: center;
+	width: 50%;
 	margin-bottom: 30px;
 	margin-top: 30px;
 }
@@ -331,6 +339,10 @@ p {
 	font-size: 20px;
 }
 
+.account__image-container {
+	width: 50%;
+}
+
 /* -------------------------MEMBERS--------------------------- */
 
 .members {
@@ -350,7 +362,7 @@ p {
 	margin-bottom: 15px;
 }
 
-.members__content {
+.members__items {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 30px;
@@ -359,18 +371,22 @@ p {
 .members__item {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 	width: calc(33.333% - 20px);
-	padding: 70px 30px;
-	background: linear-gradient(to bottom, #f9f9ff 50%, transparent 50%);
+	overflow: hidden;
 	border: 1px solid #d4d2e3;
 	border-radius: 20px;
 	text-align: center;
 }
 
-.members__image-container {
-	margin-bottom: 140px;
+.members__img {
+	margin-bottom: 40px;
+}
+
+.members__content {
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 .members__title {
@@ -394,31 +410,38 @@ p {
 .members__icons {
 	display: flex;
 	gap: 15px;
+	margin-bottom: 55px;
 }
 
-.members__link {
+.icon-contact {
 	display: flex;
 	gap: 15px;
-}
-
-.members__icon {
 	width: 36px;
 	height: 36px;
 	padding: 9px;
 	border-radius: 8px;
 	background-color: #f2f1fa;
+}
+
+.members__icon {
 	fill: currentColor;
 	color: #8d8ba7;
 }
 
-.members__icon:hover {
-	color: #f2f1fa;
+.icon-contact:hover {
 	background-color: #5f5c7f;
 }
 
-.members__icon:active {
-	color: #ffffff;
+.icon-contact:hover .members__icon {
+	color: #f2f1fa;
+}
+
+.icon-contact:active {
 	background-color: #a4a2c4;
+}
+
+.icon-contact:active .members__icon {
+	color: #ffffff;
 }
 
 /* -------------------------PAYMENTS-------------------------- */
@@ -428,7 +451,7 @@ p {
 	padding-bottom: 135px;
 }
 
-.payments__info {
+.payments__title {
 	margin-bottom: 120px;
 }
 
@@ -552,20 +575,26 @@ p {
 }
 
 .features__item_xl {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	width: 50%;
-	align-items: center;
-	justify-content: flex-end;
+	width: calc(50% - 15px);
 	padding: 60px 100px;
 	border-radius: 20px;
 	background-color: #f2f1fa;
 	text-align: center;
 }
 
-.features__item_xl .features__img {
-	margin-bottom: 140px;
+.features__image-container {
+	display: flex;
+	height: 50%;
+	justify-content: center;
+	align-items: center;
+}
+
+.features__content-container {
+	display: flex;
+	flex-direction: column;
+	height: 50%;
+	justify-content: flex-end;
+	text-align: center;
 }
 
 .features__info {
@@ -580,7 +609,7 @@ p {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 30px;
-	width: 50%;
+	width: calc(50% - 15px);
 }
 
 .features .title-h2 {
@@ -759,4 +788,59 @@ p {
 	background-size:
 		auto 50%,
 		100% auto;
+}
+
+/* -----------------------------FOUNDERS--------------------------- */
+
+.founders {
+	padding-top: 175px;
+	padding-bottom: 175px;
+}
+
+.founders__container {
+	width: 100%;
+	max-width: 1630px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.founders__info {
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.founders__title {
+	margin-bottom: 15px;
+}
+
+.founders__items {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.founders__item {
+	position: relative;
+}
+
+.founders__hover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(255, 255, 255, 0.77);
+}
+
+.founders__item:hover .founders__hover {
+	display: flex;
 }
