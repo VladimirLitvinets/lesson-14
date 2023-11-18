@@ -820,12 +820,12 @@ p {
 
 .founders__items {
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: center;
 }
 
 .founders__item {
 	position: relative;
+	max-width: 480px;
 }
 
 .founders__hover {
