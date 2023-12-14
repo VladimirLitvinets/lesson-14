@@ -17,6 +17,7 @@ body {
 
 img {
 	max-width: 100%;
+	height: auto;	
 }
 
 p {
@@ -105,6 +106,7 @@ p {
 	padding-bottom: 40px;
 	position: sticky;
 	top: 0;
+	z-index: 1;
 }
 
 .header__list {
@@ -123,6 +125,7 @@ p {
 
 .header__link {
 	position: relative;
+	padding-bottom: 10px;
 	text-align: center;
 	font-size: 18px;
 	font-weight: 400;
@@ -131,13 +134,14 @@ p {
 	text-decoration: none;
 }
 
-.header__link:before {
+.header__link:after {
 	content: "";
 	position: absolute;
 	width: 100%;
 	height: 5px;
 	border-radius: 100px;
-	bottom: -10px;
+	bottom: 0px;
+	left: 0px;
 	background-color: #1500ff;
 	transform: scaleX(0);
 	transition-property: transform;
@@ -145,7 +149,7 @@ p {
 	transition-timing-function: linear;
 }
 
-.header__link:hover:before {
+.header__link:hover:after {
 	transform: scaleX(1);
 }
 
@@ -157,15 +161,19 @@ p {
 	color: #000;
 }
 
-.header__link_active:before {
+.header__link_active:after {
 	content: "";
 	position: absolute;
 	width: 100%;
 	height: 5px;
 	border-radius: 100px;
-	bottom: -10px;
+	bottom: 0px;
 	background-color: var(--primary-color);
 	transform: scaleX(1);
+}
+
+.header__link_active:hover:after {
+	background-color: #1500ff;
 }
 
 /* -------------------------TEAM-------------------------- */
@@ -414,7 +422,7 @@ p {
 .members__item {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 	width: calc(33.333% - 20px);
 	overflow: hidden;
@@ -871,6 +879,10 @@ p {
 	width: 33.333%;
 }
 
+.founders__image {
+	width: 100%;
+}
+
 .founders__item-info {
 	position: absolute;
 	top: 0;
@@ -882,7 +894,7 @@ p {
 	justify-content: center;
 	align-items: center;
 	gap: 30px;
-	padding: 10px 15px;	
+	padding: 10px 15px;
 	background-color: rgba(255, 255, 255, 0.77);
 	transition-property: opacity;
 	transition-duration: 200ms;
@@ -890,13 +902,17 @@ p {
 	opacity: 0;
 }
 
-.founders__item-title {
-	font-size: 28px;
+.founders__item-title,
+.founders__item-subtitle {
 	transition-property: transform, opacity;
 	transition-duration: 200ms;
 	transition-timing-function: ease-in;
-	transform: translateY(-50px);
 	opacity: 0;
+}
+
+.founders__item-title {
+	font-size: 28px;
+	transform: translateY(-50px);
 }
 
 .founders__item-subtitle {
@@ -904,11 +920,7 @@ p {
 	font-weight: 500;
 	color: #8d8ba7;
 	text-transform: uppercase;
-	transition-property: transform, opacity;
-	transition-duration: 200ms;
-	transition-timing-function: ease-in;
 	transform: translateY(50px);
-	opacity: 0;
 }
 
 .founders__item:hover {
@@ -949,4 +961,100 @@ p {
 .chat__icon {
 	width: 55px;
 	height: 55px;
+}
+
+/* -----------------------------CONTACT---------------------------- */
+
+.contact {
+	padding-top: 180px;
+	padding-bottom: 180px;
+	background-image: url(../images/contact/placeholder.svg);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: 63%;
+}
+.contact__card {
+	width: 752px;
+	padding: 70px 70px;
+	border-radius: 25px;
+	background-color: #f2f1fa;
+}
+
+.contact__title {
+	margin-bottom: 10px;
+	font-size: 56px;
+	line-height: 1.2;
+	letter-spacing: 2.3px;
+}
+
+.contact__text {
+	line-height: 1.7;
+	margin-bottom: 55px;
+}
+
+.contact__form-container {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	margin-bottom: 30px;
+}
+
+.contact__form-columns {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 25px;
+}
+
+.contact__form-column {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	width: calc(50% - 15px);
+}
+
+.contact__form-item {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 100%;
+}
+
+.contact__label {
+	color: var(--primary-color);
+	font-weight: 700;
+}
+
+.contact__data-input {
+	padding: 25px 25px;
+	border-radius: 50px;
+	border: none;
+	font-size: 18px;
+}
+
+.contact__data-textarea {
+	padding: 25px 25px;
+	border-radius: 20px;
+	height: 142px;
+	width: 100%;
+	border: none;
+	resize: none;
+	font-size: 18px;
+}
+
+.contact__data-input,
+.contact__data-textarea:focus {
+	outline: none;
+}
+
+.contact__data-input::placeholder,
+.contact__data-textarea::placeholder {
+	font-family: DM Sans;
+	font-size: 18px;
+	color: #adabc3;
+}
+
+.contact__button {
+	border: none;
+	background-color: var(--primary-color);
+	color: #fff;
 }
