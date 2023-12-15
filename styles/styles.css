@@ -110,7 +110,7 @@ p {
 }
 
 .header__list {
-	display: flex;
+	display: flex;			
 	gap: 30px;
 	justify-content: space-between;
 	align-items: center;
@@ -944,7 +944,7 @@ p {
 	position: fixed;
 	right: 110px;
 	bottom: 95px;
-}
+}	
 
 .chat__button {
 	display: flex;
@@ -956,6 +956,14 @@ p {
 	height: 100px;
 	border-radius: 50px;
 	border: none;
+}
+
+.chat__button:hover {
+	background-color: #5f5c7f;
+}
+
+.chat__button:active {
+	background-color: #a4a2c4;
 }
 
 .chat__icon {
