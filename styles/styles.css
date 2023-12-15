@@ -1066,3 +1066,11 @@ p {
 	background-color: var(--primary-color);
 	color: #fff;
 }
+
+.contact__button:hover {
+	background-color: #5f5c7f;
+}
+
+.contact__button:active {
+	background-color: #a4a2c4;
+}
